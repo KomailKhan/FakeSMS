@@ -1,16 +1,16 @@
-<h1 align="center">FakeSMS v1.7b</h1>
+<h1 align="center">TBomb v1.7b</h1>
 <p align="center">An open-source SMS/call bomber for Linux And Termux.</p><br>
 
 ## Note:
 
-Due misusing of FakeSMS, several API's died. 
+Due misusing of Tbomb, several API's died. 
 Don't be afraid if you don't see all send messages.
 
 - The script requires working network connection to work.
 - No balance will be deducted for using this script to send SMS/calls.
 - While doing infinite bombing use 2-3 seconds delay and 10 to 20 threads for maximum performance.
 - Don't put spaces in between phone number (Ex- 99999 99999)
-- Make sure you are using the latest version of FakeSMS
+- Make sure you are using the latest version of TBomb
 - Make sure you are using Python3.
 
 Here's how you can check it. Type this command in your terminal.
@@ -51,8 +51,8 @@ To use the bomber type the following commands in Termux:
 ```
 pkg install git
 pkg install python
-git clone https://github.com/KomailKhan/FakeSMS.git
-cd FakeSMS
+git clone https://github.com/KomailKhan/Tbomb.git
+cd TBomb
 chmod +x TBomb.sh
 ./TBomb.sh
 ```
@@ -69,8 +69,8 @@ Commands below provide instructions for Debian-based systems.
 To use the bomber type the following commands in Linux terminal:
 ```
 sudo apt install git
-git clone https://github.com/KomailKhan/FakeSMS.git
-cd FakeSMS
+git clone https://github.com/KomailKhan/TBomb.git
+cd TBomb
 chmod +x TBomb.sh
 sudo bash TBomb.sh
 ```
@@ -89,8 +89,8 @@ brew install git
 brew install python3
 sudo easy_install pip
 sudo pip install --upgrade pip
-git clone https://github.com/KomailKhan/FakeSMS.git
-cd FakeSMS
+git clone https://github.com/KomailKhan/TBomb.git
+cd TBomb
 chmod +x TBomb.sh
 
 # Missing Tools on MacOS
