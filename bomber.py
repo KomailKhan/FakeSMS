@@ -20,7 +20,7 @@ except ImportError:
 
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
-# The Credit For This Code Goes To SpeedX And All Other Contributors Listed At https://github.com/TheSpeedX/TBomb
+# The Credit For This Code Goes To KomailKhan And All Other Contributors Listed At https://github.com/KomailKhan/FakeSMS
 # If You Wanna Take Credits For This Code, Please Look Yourself Again
 
 country_codes = {
@@ -239,16 +239,14 @@ def clr():
 def banner():
     
     clr()
-    logo="""                                                  
-   ████████ ██████                 ██             
-   ▒▒▒██▒▒▒ ██▒▒▒██                ██             
-      ██    ██   ██  ████  ██   ██ ██             
-      ██    ██████▒ ██▒▒██ ███ ███ █████          
-      ██    ██▒▒▒██ ██  ██ ██▒█▒██ ██▒▒██         
-      ██    ██   ██ ██  ██ ██ ▒ ██ ██  ██         
-      ██    ██████▒ ▒████▒ ██   ██ █████▒         
-      ▒▒    ▒▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒          
-                                         """
+    logo="""                                                     
+███████╗░░░░░░░██████╗███╗░░░███╗░██████╗
+██╔════╝░░░░░░██╔════╝████╗░████║██╔════╝
+█████╗░░█████╗╚█████╗░██╔████╔██║╚█████╗░
+██╔══╝░░╚════╝░╚═══██╗██║╚██╔╝██║░╚═══██╗
+██║░░░░░░░░░░░██████╔╝██║░╚═╝░██║██████╔╝
+╚═╝░░░░░░░░░░░╚═════╝░╚═╝░░░░░╚═╝╚═════╝░       
+                Komail-Khan                   """
     print(random.choice(colors)+logo+W)
     print("\n")
 
@@ -727,7 +725,7 @@ def start(target, counter, delay, ch, cc):
                 else:
                     print('\n\n\tSorry Your Country is Not Supported...')
                     print(
-                        '\t\tPlease Send A Mail To ggspeedx29@gmail.com To Let Us Know...')
+                        '\t\tPlease Search Freaked Dude on YouTube To Let Us Know...')
                     input('Press Enter To Exit...')
                     exit()
         print(random.choice(colors))
@@ -741,7 +739,7 @@ def start(target, counter, delay, ch, cc):
         print("             Failed Requests         : ", failed)
         print("==================================================================")
         print("              Use this for fun, not for revenge !!                ")
-        print("              This Bomber Was Created By SpeedX !!                ")
+        print("              This Bomber Was Created By KomailKhan !!                ")
         print("==================================================================")
         try:
             result = getapi(target, api, cc)
@@ -768,7 +766,7 @@ def update():
     stuff_to_update = ['bomber.py', '.version']
     for fl in stuff_to_update:
         dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/" + fl).read()
+            "https://raw.githubusercontent.com/KomailKhan/FakeSMS/master/" + fl).read()
         file = open(fl, 'wb')
         file.write(dat)
         file.close()
@@ -788,7 +786,7 @@ except Exception:
     exit()
 print('\tChecking For Updates...')
 ver = urllib.request.urlopen(
-    "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.version").read().decode('utf-8')
+    "https://raw.githubusercontent.com/KomailKhan/FakeSMS/master/.version").read().decode('utf-8')
 verl = ''
 try:
     verl = open(".version", 'r').read()
@@ -799,10 +797,10 @@ if ver != verl:
     print('\tStarting Update...')
     update()
 print("Your Version is Up-To-Date")
-print('\n\n\t\t\tStarting TBomb...\n\n')
+print('\n\n\t\t\tStarting FakeSMS...\n\n')
 try:
     noti = urllib.request.urlopen(
-        "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.notify").read().decode('utf-8')
+        "https://raw.githubusercontent.com/KomailKhan/FakeSMS/master/.notify").read().decode('utf-8')
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
@@ -897,7 +895,7 @@ if cbomb:
 if nm == 0:
     nt = int(input("\tNumber Of Threads(10 to 20) : "))
     if nt <= 0 or nt >= 30:
-        print('\tTBomb Shows Better Result in 10 to 25 Threads\n\t\tStill Continuing....')
+        print('\tFakeSMS Shows Better Result in 10 to 25 Threads\n\t\tStill Continuing....')
     print("\n\nPlease Remember That This Is in Experimental Stage And Is Incredibly Fast...")
     t = [None] * nt
     print(random.choice(colors))
@@ -910,7 +908,7 @@ if nm == 0:
     print("             Delay               : ", dl)
     print("==================================================================")
     print("              Use this for fun, not for revenge !!                ")
-    print("              This Bomber Was Created By SpeedX !!                ")
+    print("              This Bomber Was Created By KomailKhan !!                ")
     print("==================================================================")
     print(W)
     input('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')
